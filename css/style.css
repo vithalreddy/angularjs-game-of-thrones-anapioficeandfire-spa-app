@@ -191,7 +191,7 @@ border-radius: 10%;
 
 /*header*/
 #hero{
-  background-image:url("/game-of-thrones.jpg");
+  background-image:url("https://3.bp.blogspot.com/-FK3jTdSJEDo/WQCR9-mD9dI/AAAAAAAABaY/p41OFEvIT3gtmpt4JV45iHOUVmwhJkz6gCLcB/s1600/game-of-thrones.jpg");
   background-size:cover;
   position:relative;
   height:80vh;

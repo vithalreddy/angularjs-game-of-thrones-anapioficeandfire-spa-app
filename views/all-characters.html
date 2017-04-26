@@ -1,0 +1,28 @@
+<!-- sort buttons-->
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-4">
+      <a class="btn btn-lg btn-danger btn-block" ng-click="mytoggle3=!mytoggle3"><span class="glyphicon glyphicon-filter"></span>    Sort By Name</a>
+    </div>
+    <div class="col-md-4">
+      <div class="input-group btn-block has-success" style="padding: 5px;">
+        <span class="input-group-addon"><span class="glyphicon glyphicon-filter"></span> Name:</span>
+        <input type="text" class="form-control inputdefault " ng-model="searchByNameZ.name" placeholder="Enter Name To Search" />
+      </div>
+    </div>
+    <div class="col-md-4">
+      <a class="btn btn-lg btn-primary btn-block" ng-href="#/"><span class="glyphicon glyphicon-home">  </span>  Go to Homepage</a>
+    </div>
+  </div>
+</div>
+<!-- sort buttons end-->
+<div class="box3 effect" ng-repeat="character in listAll.characters | orderBy: !mytoggle3? 'name':'-name' | filter:searchByNameZ" onclick="location.href='#';" style="cursor: pointer;" onmouseover="this.style.background='white' , this.style.color='black';"
+  onmouseout="this.style.background='#3498db' , this.style.color='white';" title="Click Me to View Character Details..." data-toggle="tooltip">
+  <a ng-href="#/view-character/{{ character.url.replace('https://anapioficeandfire.com/api/characters/','') }}">
+    <div>
+      <p><i class="fa fa-user" aria-hidden="true"></i> #{{$index +1}}</p>
+      <h3>Name:  {{character.name}} <span ng-show = "{{character.name.length < 1 }}" >"No Name Available"</span> </h3>
+      <p>Gender: {{character.gender}} <span ng-show="{{character.gender.length < 1}}">"No Genders Available"</span></p>
+      <p>Culture: {{character.culture}} <span ng-show="{{character.culture.length < 1 }}">"No Culture Available"</span></p>
+    </div>
+</div>

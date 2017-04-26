@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html ng-app="gotApp">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no" />
+  <!-- <meta http-equiv="Cache-Control" content="no-cache" />
+  <meta http-equiv="Pragma" content="no-cache" />
+  <meta http-equiv="Expires" content="0" /> -->
+
+  <meta name="description" content="Game of Thrones - An API Of Ice And Fire - AngularJS SPA App">
+  <meta name="author" content="Vithalreddy.M.B">
+  <link rel="shortcut icon" type="image/png" href="favicon.ico" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/backtop.css">
+  <link rel='stylesheet' href='css/loading-bar.css' type='text/css' media='all' />
+
+
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Lora">
+
+  <title>Game of Thrones - An API Of Ice And Fire - AngularJS SPA App</title>
+</head>
+
+<body>
+  <div id="wrapper">
+    <div id="hero">
+      <div class="header">
+        <h1 class="h1style"> <i class="fa fa-fort-awesome" aria-hidden="true"></i>  Game Of Thrones  <i class="fa fa-fort-awesome" aria-hidden="true"></i></h1>
+        <p class="p1style">All the data from the universe of Ice And Fire you've ever wanted.</p>
+      </div>
+    </div>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-12">
+
+
+          <div ng-view class="mainMagic"></div>
+          <back-to-top></back-to-top>
+          <footer class="footer">
+
+            <p class="footer-motto" style="color: white; font-weight: bold;"><i class="fa fa-fort-awesome" aria-hidden="true"></i> Game Of Thrones - Universe of Ice And Fire <i class="fa fa-fort-awesome" aria-hidden="true"></i>
+            </p>
+
+            <p class="footer-links">
+              <a href="https://github.com/vithalreddy/angularjs-game-of-thrones-anapioficeandfire-spa-app" target="_blank">View Source code In Github Repo</a> ·
+              <a href="https://github.com/vithalreddy" target="_blank">Visit My Github Profile</a> ·
+              <a href="mailto:vmreddyvmb@gmail.com" target="_blank">Contact</a>
+            </p>
+
+            <p class="footer-name"> &copy; <a href="https://vmrworld.com" target="_blank"><b>VithalReddy</b> </a></p>
+
+          </footer>
+
+          <!-- app section end -->
+        </div>
+      </div>
+    </div>
+
+
+    <!-- JavaScript Files -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular-route.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-animate.js"></script>
+    <script src="angular/app.js"></script>
+    <script src="angular/routes.js"></script>
+    <script src="angular/apiFactory.js"></script>
+    <script src="angular/controllers/listAllCtrl.js"></script>
+    <script src="angular/directives/apiDirective.js"></script>
+    <script src="angular/controllers/bookCtrl.js"></script>
+    <script src="angular/controllers/houseCtrl.js"></script>
+    <script src="angular/controllers/characterCtrl.js"></script>
+    <script src="angular/directives/backtop.js"></script>
+    <script type='text/javascript' src='angular/directives/loading-bar.js'></script>
+
+
+
+
+
+
+
+
+
+
+</body>
+
+
+</html>
